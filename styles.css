@@ -1,0 +1,90 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 8fr;
+}
+
+#sidebar {
+    border: solid;
+    border-color: red;
+    grid-column: 1;
+    grid-row: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr 4fr 5fr;
+}
+
+.dashboard {
+    grid-row: 1;
+}
+
+.sidebarOne {
+    grid-row: 2;
+}
+
+.sidebarTwo {
+    grid-row: 3;
+}
+
+#header {
+    border: solid;
+    border-color: blue;
+    grid-column: 2/-1;
+    grid-row: 1/1;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.headerOne {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 100%;
+}
+
+.headerTwo {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 100%;
+}
+
+#main {
+    border: solid;
+    border-color: yellow;
+    grid-column: 2/2;
+    grid-row: 2/2;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-row: 1fr 3fr 1fr 3fr;
+}
+
+.cardHeader {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.announcementsHeader {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.cards {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.announcementCard {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.trendingHeader {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.trendingCard {
+    grid-column: 3;
+    grid-row: 4;
+}
