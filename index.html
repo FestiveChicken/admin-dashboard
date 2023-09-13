@@ -30,17 +30,17 @@
         <div class="headerOne">
             <div class="search">
                 <img class="headerContent" src="images/search-icon.png" alt="Search Icon" id="headerSearchIcon">
-                <div class="headerContent topnav">Search</div>
+                <input class="headerContent topnav" type="text" placeholder="Search..">
             </div>
-            <img src="" alt="Notifications Icon" class="headerContent">
-            <img src="" alt="Profile Picture" class="headerContent">
+            <img src="images/bell-ring.svg" alt="Notifications Icon" class="headerContent" id="notificationsBell">
+            <img src="images/profile-picture.png" alt="Profile Picture" class="headerContent" id="h1ProfilePicture">
             <p class="headerContent">John Doe</p>
         </div>
         <div class="headerTwo">
-            <img src="" alt="Profile Picture" class="headerContent">
+            <img src="images/profile-picture.png" alt="Profile Picture" class="headerContent">
             <div class="headerContent">
                 <p class="helloText">Hello there,</p>
-                <p class="helloText">John Doe (@johnnyd)</p>
+                <p class="helloText" id="biggerText">John Doe (@johnnyd)</p>
             </div>
             <button class="headercontent">New</button>
             <button class="headercontent">Upload</button>
@@ -49,41 +49,81 @@
     </div>
     <div id="mainContent">
         <p class="cardHeader">Your Projects</p>
-        <p class="announcementsHeader">Announcements</p>
+        <h1 class="announcementsHeader">Announcements</h1>
         <div class="cards">
             <div class="card">
-                <p class="cardTitle">Super Cool Project</p>
-                <p class="cardText">sample text</p>
+                <h1 class="cardTitle">Super Cool Project</h1>
+                <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur hendrerit accumsan lorem, non rutrum nisi tristique vitae. 
+                    Ut finibus est sit amet scelerisque aliquet. 
+                    Etiam lacus purus, volutpat ut finibus a, pulvinar id dolor.
+                </p>
             </div>
             <div class="card">
-                <p class="cardTitle">Less Cool Project</p>
-                <p class="cardText">sample</p>
+                <h1 class="cardTitle">Less Cool Project</h1>
+                <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur hendrerit accumsan lorem, non rutrum nisi tristique vitae. 
+                    Ut finibus est sit amet scelerisque aliquet. 
+                    Etiam lacus purus, volutpat ut finibus a, pulvinar id dolor.</p>
             </div>
             <div class="card">
-                <p class="cardTitle">Impossible App</p>
-                <p class="cardText">sample</p>
+                <h1 class="cardTitle">Impossible App</h1>
+                <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur hendrerit accumsan lorem, non rutrum nisi tristique vitae. 
+                    Ut finibus est sit amet scelerisque aliquet. 
+                    Etiam lacus purus, volutpat ut finibus a, pulvinar id dolor.</p>
             </div>
             <div class="card">
-                <p class="cardTitle">Easy Peasy App</p>
-                <p class="cardText">sample</p>
+                <h1 class="cardTitle">Easy Peasy App</h1>
+                <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur hendrerit accumsan lorem, non rutrum nisi tristique vitae. 
+                    Ut finibus est sit amet scelerisque aliquet. 
+                    Etiam lacus purus, volutpat ut finibus a, pulvinar id dolor.</p>
             </div>
             <div class="card">
-                <p class="cardTitle">Ad Blocker</p>
-                <p class="cardText">sample</p>
+                <h1 class="cardTitle">Ad Blocker</h1>
+                <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur hendrerit accumsan lorem, non rutrum nisi tristique vitae. 
+                    Ut finibus est sit amet scelerisque aliquet. 
+                    Etiam lacus purus, volutpat ut finibus a, pulvinar id dolor.</p>
             </div>
             <div class="card">
-                <p class="cardTitle">Money Maker</p>
-                <p class="cardText">sample</p>
+                <h1 class="cardTitle">Money Maker</h1>
+                <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur hendrerit accumsan lorem, non rutrum nisi tristique vitae. 
+                    Ut finibus est sit amet scelerisque aliquet. 
+                    Etiam lacus purus, volutpat ut finibus a, pulvinar id dolor.</p>
             </div>
         </div>
         <div class="announcementCard">
-            <p class="announcementsContent">Site Maintenance</p>
-            <p class="announcementsContent">Community share Day</p>
-            <p class="announcementsContent">Updated Privacy Policy</p>
+            <h2 class="announcementsContent">Site Maintenance
+                <p class="iDontKnow">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </h2>
+            <h2 class="announcementsContent">Community share Day
+                <p class="iDontKnow">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </h2>
+            <h2 class="announcementsContentLast">Updated Privacy Policy
+                <p class="iDontKnow">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </h2>
         </div>
-        <p class="trendingHeader">Trending</p>
+        <h1 class="trendingHeader">Trending</h1>
         <div class="trendingCard">
-            blah
+            <div class="trendingCardLeft">
+                <img src="images/profile-picture.png" alt="profile-picture">
+                <img src="images/profile-picture.png" alt="profile-picture">
+                <img src="images/profile-picture.png" alt="profile-picture">
+            </div>
+            <div class="trendingCardRight">
+                <h2 class="username">@janeDoe
+                    <p class="projectDescription">Super Duper Secret App</p>
+                </h2>
+                <h2 class="username">@johnnyd
+                    <p class="projectDescription">Easy Peasy App</p>
+                </h2>
+                <h2 class="username">@AnotherRandomGuy
+                    <p class="projectDescription">World Peace Builder</p>
+                </h2>
+            </div>
         </div>
 
 

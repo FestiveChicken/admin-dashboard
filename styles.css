@@ -4,11 +4,11 @@
 }
 
 body {
-    height: 100%;
     min-height: 100vh;
+    max-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: Roboto, 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 2fr 8fr;
@@ -23,6 +23,7 @@ body {
     grid-template-rows: 1fr 4fr 5fr;
     justify-items: start;
     font-size: large;
+    max-height: 100vh;
 }
 
 .dashboard {
@@ -53,76 +54,247 @@ body {
 }
 
 #header {
-    border: solid;
-    border-color: blue;
+    padding-left: 40px;
     grid-column: 2/-1;
     grid-row: 1/1;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 2fr 3fr;
+    box-shadow: 5px 2px 30px gray;
+    position: relative;
 }
 
-.headerOne {
-    align-items: center;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-row: 100%;
-}
+    .headerOne {
+        align-items: center;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 20fr 1fr 1fr 3fr;
+        justify-items: start;
+        padding-left: 6px;
+    }
 
-#headerSearchIcon {
-    height: 20px;
-    width: 20px;
-    margin-left: 10px;
-}
+        #headerSearchIcon {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            margin-left: auto;
+        }
 
-.search {
-    display: inline;
-}
+        .search {
+            display: grid;
+            grid-template-columns: 1fr 20fr;
+            align-items: center;
+        }
 
-.headerTwo {
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-row: 100%;
-}
+        .search input[type=text] {
+            background-color: rgb(231, 231, 231);
+            padding: 10px;
+            border: none;
+            border-radius: 22px;
+            font-size: 14px;
+            margin-left: 8px;
+            margin-right: 24px;
+        }
+
+        #notificationsBell {
+            height: 20px;
+            width: 20px;
+        }
+
+        #h1ProfilePicture {
+            height: 50px;
+            width: 50px; 
+        }
+
+        .headerOne p {
+            margin-left: 24px;
+        }
+
+    .headerTwo {
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
+        align-items: center;
+        margin-right: 28px;
+    }
+
+        .headerTwo img {
+            height: 80px;
+            width: 80px;
+        }
+
+        .helloText {
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+
+        #biggerText {
+            font-size: x-large;
+        }
+
+        button {
+            background-color: #0ea5e9;
+            border-radius: 32px;
+            border: none;
+            margin-left: 32px;
+            height: 3em;
+            width: 8em;
+            color: white;
+            font-family: Roboto, 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #0ea4e99a;
+        }
+
+        button:active {
+            background-color: #0ea4e944;
+        }
+
 
 #mainContent {
-    border: solid;
-    border-color: yellow;
+    background-color: rgb(231, 231, 231);
     grid-column: 2/2;
     grid-row: 2/2;
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
-    grid-row: 1fr 3fr 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr;
+    height: 100%;
+    min-height: 100%;
 }
 
-.cardHeader {
-    grid-column: 1;
-    grid-row: 1;
-}
+    .cardHeader {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        margin-left: 2em;
+        font-size: x-large;
+    }
 
-.announcementsHeader {
-    grid-column: 3;
-    grid-row: 1;
-}
+        .cards {
+            grid-column: 1/3;
+            grid-row: 2/5;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            max-height: 100vh;
+        }
 
-.cards {
-    grid-column: 1/2;
-    grid-row: 2/4;
-}
+        .card {
+            background-color: white;
+            margin-left: 2em;
+            margin-bottom: 2em;
+            margin-right: 2em;
+            border-radius: 16px;
+            box-shadow: 0px 4px 16px grey;
+        }
 
-.announcementCard {
-    grid-column: 3;
-    grid-row: 2;
-}
+        .card h1 {
+            font-size: larger;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
 
-.trendingHeader {
-    grid-column: 3;
-    grid-row: 3;
-}
+        .card p {
+            margin-left: 30px;
+            margin-right: 30px;
+            color: gray;
+        }
 
-.trendingCard {
-    grid-column: 3;
-    grid-row: 4;
-}
+    .announcementsHeader {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        margin-left: 5px;
+        font-size: x-large;
+    }
 
+        .announcementCard {
+            grid-column: 3;
+            grid-row: 2;
+            margin-right: 30px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0px 4px 16px grey;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .announcementsContent {
+            margin-left: 20px;
+            margin-right: 20px;
+            border-bottom: solid;
+            border-color: rgb(218, 216, 216);
+            font-size: large;
+        }
+
+        .announcementsContentLast {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: large;
+        }
+
+        .iDontKnow {
+            font-size: small;
+            color: gray;
+        }
+
+    .trendingHeader {
+        grid-column: 3;
+        grid-row: 3;
+        align-self: center;
+        margin-left: 5px;
+        font-size: x-large;
+    }
+
+    .trendingCard {
+        grid-column: 3;
+        grid-row: 4;
+        background-color: white;
+        height: 90%;
+        min-height: 90%;
+        border-radius: 16px;
+        margin-bottom: 60px;
+        margin-right: 30px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        border-radius: 16px;
+        box-shadow: 0px 4px 16px grey;
+
+    }
+
+    .trendingCardLeft {
+        grid-column: 1;
+        grid-row: 1/3;
+        align-self: center;
+        margin-top: 100px;
+    }
+    .trendingCardLeft img {
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+        margin-bottom: 25px;
+
+    }
+
+    .trendingCardRight {
+        grid-column: 2;
+        grid-row: 1/3;
+        margin-right: 15px;
+    }
+
+    .trendingCard h2 {
+        font-size: medium;
+    }
+
+    .trendingCard h2 p {
+        color: gray;
+        margin-top: 4px;
+    }
+
+    .username {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
